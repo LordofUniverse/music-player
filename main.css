@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#bg{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  left: 0;
+  background-color: rgb(194, 194, 160);
+  border-radius: 0px 10px 10px 0;
+  z-index: 4;
+}
+
+#right{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: rgb(194, 194, 160);
+  border-radius: 10px 0px 0px 10px;
+  z-index: 4;
+}
+
+#left:hover{
+  width: 250px;
+}
+
+#right:hover{
+  width: 250px;
+}
+
+#img{
+  width: 100%;
+  height: auto;
+}
+
+#middle{
+  position: absolute;
+  z-index: 5;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#middle{
+  background: rgba( 255, 255, 255, 0.40 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 20.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#file-input {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+#canvas {
+  position: fixed;
+  left: 5px;
+  top: 0;
+  width: calc(100% - 10px);
+  height: 50%;
+  /* backdrop-filter: blur( 3px ); */
+}
+
+#canvas2 {
+  position: fixed;
+  left: 5px;
+  bottom: 0;
+  width: calc(100% - 10px);
+  height: 50%;
+  /* backdrop-filter: blur( 3px ); */
+}
+
+audio {
+  margin-top: 45px;
+  width: calc(100% - 25px);
+  z-index: 3;
+}
+
+#name {
+  z-index: 3;
+  color: #0e0c0c;
+  font-family: monospace;
+}
+
+#background {
+  width: calc(100% - 10px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  background-size: 100% 7px;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+@keyframes bg {
+  0%{ background-position: 0 0; }
+  100%{ background-position: 8px 8px; }
+}
